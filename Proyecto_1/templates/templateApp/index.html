@@ -63,6 +63,26 @@
         .footer .col {
             margin: 15px 0;
         }
+
+        /* Estilo para los botones de las secciones */
+        .section-button {
+            background-color: #343a40; /* Color gris oscuro */
+            color: #f8f9fa; /* Texto claro */
+            display: flex; /* Alinear icono y texto */
+            align-items: center; /* Centrar contenido verticalmente */
+            padding: 12px 24px; /* Espaciado interno */
+        }
+
+        .section-button img {
+            width: 30px; /* Tamaño del icono */
+            height: 30px;
+            margin-right: 10px; /* Espacio entre icono y texto */
+        }
+
+        /* Estilo del botón en estado hover */
+        .section-button:hover {
+            background-color: #495057; /* Color ligeramente más claro en hover */
+        }
     </style>
 </head>
 <body style="background-color: #f8f9fa;">
@@ -70,7 +90,7 @@
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Mi Tienda</a>
+            <a class="navbar-brand" href="#" style="color: orange;">TEMU-KO</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -92,7 +112,7 @@
 
     <!-- Contenedor principal -->
     <div class="container mt-5">
-        <h1 class="text-center">Bienvenido a Mi Tienda</h1>
+        
 
         <!-- Carrusel -->
         <div class="carousel-container">
@@ -106,19 +126,19 @@
                 <div class="carousel-inner">
                     <!-- Primera Imagen -->
                     <div class="carousel-item active">
-                        <img src="{% static 'img/carrusel1.jpg' %}" class="d-block w-100" alt="Carrusel 1">
+                        <img src="{% static 'img/carrusel5.jpg' %}" class="d-block w-100" alt="Carrusel 1">
                     </div>
                     <!-- Segunda Imagen -->
                     <div class="carousel-item">
-                        <img src="{% static 'img/carrusel2.jpg' %}" class="d-block w-100" alt="Carrusel 2">
+                        <img src="{% static 'img/carrusel6.jpg' %}" class="d-block w-100" alt="Carrusel 2">
                     </div>
                     <!-- Tercera Imagen -->
                     <div class="carousel-item">
-                        <img src="{% static 'img/carrusel3.jpg' %}" class="d-block w-100" alt="Carrusel 3">
+                        <img src="{% static 'img/carrusel7.jpg' %}" class="d-block w-100" alt="Carrusel 3">
                     </div>
                     <!-- Cuarta Imagen -->
                     <div class="carousel-item">
-                        <img src="{% static 'img/carrusel4.jpg' %}" class="d-block w-100" alt="Carrusel 4">
+                        <img src="{% static 'img/carrusel8.jpg' %}" class="d-block w-100" alt="Carrusel 4">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
@@ -137,13 +157,19 @@
             <h3 class="text-center">Secciones</h3>
             <div class="row mt-4">
                 <div class="col-md-4">
-                    <a href="/productos/electronica/" class="btn btn-primary btn-lg btn-block" style="width: 100%;">Electrónica</a>
+                    <a href="/productos/electronica/" class="btn btn-lg btn-block section-button" style="width: 100%;">
+                        <img src="{% static 'img/electronica.svg' %}" alt="Icono Electrónica">Electrónica
+                    </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="/productos/juguetes/" class="btn btn-success btn-lg btn-block" style="width: 100%;">Juguetes</a>
+                    <a href="/productos/juguetes/" class="btn btn-lg btn-block section-button" style="width: 100%;">
+                        <img src="{% static 'img/juguetes.svg' %}" alt="Icono Juguetes">Juguetes
+                    </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="/productos/ropa/" class="btn btn-warning btn-lg btn-block" style="width: 100%;">Ropa</a>
+                    <a href="/productos/ropa/" class="btn btn-lg btn-block section-button" style="width: 100%;">
+                        <img src="{% static 'img/ropa.svg' %}" alt="Icono Ropa">Ropa
+                    </a>
                 </div>
             </div>
         </div>
@@ -216,8 +242,8 @@
                 <div class="col-md-4">
                     <h5>Contacto</h5>
                     <p>Teléfono: +56 123 456 789</p>
-                    <p>Email: info@mitienda.cl</p>
-                    <p>Dirección: Santiago, Chile</p>
+                    <p>Email: info@Temuco-ko.cl</p>
+                    <p>Dirección: Temuco, Chile</p>
                 </div>
                 <!-- Enlaces rápidos -->
                 <div class="col-md-4">
@@ -228,11 +254,12 @@
                 </div>
                 <!-- Derechos reservados -->
                 <div class="col-md-4">
-                    <h5>Mi Tienda</h5>
-                    <p>&copy; 2024 Mi Tienda. Todos los derechos reservados.</p>
+                    <h5>TEMU-KO</h5>
+                    <p style="color: orange;">&copy; 2024 TEMU-KO. Todos los derechos reservados.</p>
                 </div>
             </div>
         </div>
     </footer>
+
 </body>
 </html>
